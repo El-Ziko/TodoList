@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="todo.css" />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <nav>
+      <input
+        placeholder="Todo text"
+        type="text"
+        class="js-text-input"
+        onkeydown="keyDown(event)"
+      />
+      <input type="date" onkeydown="keyDown(event)" class="js-date-input" />
+      <button onclick="pushTodo();">Add</button>
+    </nav>
+    <div>this is a div</div>
+    <script src="todo.js"></script>
+  </body>
+</html>

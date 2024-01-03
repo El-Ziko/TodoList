@@ -1,0 +1,35 @@
+body{
+	background: url(../crow.png) #333 no-repeat center fixed ;
+	color: white;
+	font-size: 30px;
+	margin-left: 50px;
+}
+h1 {
+	text-align: center;
+}
+nav { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+div {
+	display: grid;
+	grid-template: 1fr;
+	grid-auto-rows:25px ;
+	justify-content: center;
+}
+button{ 
+	border-radius: 33rem;
+	height: 75px;
+	width: 75px;
+	background-color: transparent;
+	color: white;
+	font-size: 15px;
+}
+input {
+	border-radius: 10px;
+	padding: 20px ;
+	background-color: transparent ;
+	color: whitesmoke;
+}
