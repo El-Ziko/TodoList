@@ -7,13 +7,13 @@ renderTodoList();
 
 function renderTodoList() {
   let todoListHTML = "";
-
-  for (let i = 0; i < todoList.length; i++) {
-    const todo = todoList[i];
-    const html = `<p><li>${todo.Text} ${todo.date} <button onclick='upDate(${i});
+  /* for (let i = 0; i < todoList.length; i++) {
+    const todo = todoList[i]; */
+todoList.forEach((todo,i)=>{
+  const html = `<p><li>${todo.Text} ${todo.date} <button onclick='upDate(${i});
     '>Delete</button></li></p>`;
     todoListHTML += html;
-  }
+});
   document.querySelector("div").innerHTML = todoListHTML;
 }
 
